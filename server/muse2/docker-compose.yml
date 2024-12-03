@@ -1,0 +1,12 @@
+services:
+  muse2:
+    #image: muse2
+    image: muse2:v3.0
+    container_name: muse2
+    environment:
+      mem_limit: 700mb
+    networks:
+      - server
+networks:
+  server:
+    external: true

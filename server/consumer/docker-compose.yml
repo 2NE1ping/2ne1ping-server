@@ -1,0 +1,9 @@
+services:
+  consumer:
+    image: consumer
+    container_name: consumer
+    networks:
+      - server
+networks:
+  server:
+    external: true
